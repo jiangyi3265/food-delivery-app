@@ -1,0 +1,265 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/login/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/home/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/product/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/cart/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/checkout/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/orders/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/detail/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/mine/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/bill/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/address/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/settings/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/help/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/workbench/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/supplierOrders/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/picking/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/delivery/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/history/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/dashboard/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/products/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/productEdit/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/stores/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/suppliers/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/bindings/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/adminOrders/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/reports/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/settlements/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/accounts/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/accountEdit/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/entityEdit/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/manage/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/feedback/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "食材配送",
+        "enablePullDownRefresh": true
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "食材配送",
+    "backgroundColor": "#F5F6F1"
+  }
+}

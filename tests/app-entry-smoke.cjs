@@ -1,0 +1,41 @@
+const {testPassword,changedPassword}=require('./test-credentials.cjs');
+const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+
+(async () => {
+  const browser = await chromium.launch({ headless: true });
+  const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
+  const errors = [];
+  let checks = 0;
+  page.on('pageerror', error => errors.push(error.message));
+  page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
+  await page.goto('http://127.0.0.1:54142/food', { waitUntil: 'networkidle' });
+  const app = page.frameLocator('iframe[title="食材配送平台管理"]');
+  await app.locator('.login-form input').nth(1).fill(testPassword);await app.locator('uni-button').filter({ hasText: /^登录$/ }).click();
+  await app.getByText('平台经营总览', { exact: true }).waitFor();
+  checks++;
+  await app.locator('.bottom-nav uni-button').filter({ hasText: '商品' }).click();
+  await app.locator('.card').filter({ hasText: '土豆' }).first().waitFor();
+  checks++;
+  await page.screenshot({ path: path.join(__dirname, 'artifacts/platform-entry.png'), fullPage: true });
+
+  await page.goto('http://127.0.0.1:54141/#/pages/login/index?role=store', { waitUntil: 'networkidle' });
+  await page.locator('.login-form input').nth(1).fill(testPassword);await page.locator('uni-button').filter({ hasText: /^登录$/ }).click();
+  await page.waitForURL('**/pages/home/index?role=store');
+  await page.locator('.product-tile').first().waitFor();
+  assert(await page.locator('.food-photo').count() > 0);
+  checks++;
+  await page.goto('http://127.0.0.1:54141/#/pages/accounts/index?role=store', { waitUntil: 'networkidle' });
+  await page.getByText('当前账号无权访问此页面', { exact: true }).waitFor();
+  checks++;
+  await page.locator('uni-button').filter({ hasText: /^返回工作台$/ }).click();
+  await page.waitForURL('**/pages/home/index?role=store');
+  checks++;
+  assert.deepEqual(errors, []);
+  const report = { passed: true, checks, errors, time: new Date().toISOString() };
+  fs.writeFileSync(path.join(__dirname, 'artifacts/entry-result.json'), JSON.stringify(report, null, 2));
+  console.log(JSON.stringify(report));
+  await browser.close();
+})().catch(error => { console.error(error); process.exit(1); });

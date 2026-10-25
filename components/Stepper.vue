@@ -1,0 +1,3 @@
+<template><view class="stepper"><button :disabled="disabled" :aria-label="'减少'+label" @tap.stop="$emit('change',Number(modelValue)<=minimum?0:Math.max(minimum,Number((Number(modelValue)-1).toFixed(2))))">−</button><input type="digit" :disabled="disabled" :value="modelValue" :aria-label="label+'数量'" @blur="$emit('change',Number($event.detail.value))"/><button :disabled="disabled" :aria-label="'增加'+label" @tap.stop="$emit('change',Number(modelValue)===0?minimum:Number((Number(modelValue)+1).toFixed(2)))">+</button></view></template>
+<script setup>defineProps({modelValue:Number,minimum:{default:1},disabled:Boolean,label:{default:''}});defineEmits(['change'])</script>
+

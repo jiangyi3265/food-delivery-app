@@ -1,0 +1,33 @@
+{
+  "name": "food-delivery-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:h5": "node scripts/uni.cjs --host 0.0.0.0 --port 54141",
+    "build:h5": "node scripts/uni.cjs build",
+    "build:mp-weixin": "node scripts/uni.cjs build -p mp-weixin",
+    "test:api": "node tests/api-integration.cjs && node tests/security-and-crud.cjs && node tests/full-regression-api.cjs && node --experimental-vm-modules tests/session-flow.cjs"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "3.0.0-5030320261023001",
+    "@dcloudio/uni-components": "3.0.0-5030320261023001",
+    "@dcloudio/uni-h5": "3.0.0-5030320261023001",
+    "@dcloudio/uni-mp-weixin": "3.0.0-5030320261023001",
+    "vue": "3.4.21",
+    "vue-i18n": "9.14.1",
+    "vue-router": "4.4.4"
+  },
+  "devDependencies": {
+    "@dcloudio/types": "^3.4.14",
+    "@dcloudio/vite-plugin-uni": "3.0.0-5030320261023001",
+    "sass": "1.77.8",
+    "vite": "5.2.8",
+    "adm-zip": "0.5.16",
+    "playwright": "1.56.1"
+  },
+  "description": "食材配送门店、供应商及平台业务应用",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jiangyi3265/food-delivery-app.git"
+  }
+}
